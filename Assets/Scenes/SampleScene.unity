@@ -877,7 +877,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6978fc212731634ba00702c9724736a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rbody: {fileID: 1888749068}
   swingSpeed: 200
 --- !u!4 &588107682 stripped
 Transform:
@@ -24222,11 +24221,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4907925447979286, guid: b3253fbff543e074fb0bd02b324fad0a,
     type: 2}
   m_PrefabInternal: {fileID: 1308014063}
---- !u!50 &1888749068 stripped
-Rigidbody2D:
-  m_CorrespondingSourceObject: {fileID: 50050696848903202, guid: 8bdada8cbef6d104f8f31dc3d91d42f0,
-    type: 2}
-  m_PrefabInternal: {fileID: 1565389818}
 --- !u!4 &1888749071 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4630542051015782, guid: 8bdada8cbef6d104f8f31dc3d91d42f0,

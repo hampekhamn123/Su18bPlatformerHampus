@@ -42,9 +42,4 @@ public class Sword : MonoBehaviour
             lookingRight = true;
         }
     }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-
-    }
 }

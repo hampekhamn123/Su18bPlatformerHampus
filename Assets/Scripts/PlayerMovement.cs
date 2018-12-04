@@ -29,7 +29,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetButtonDown("Jump") && EnemyHorizontalMovement.jumpBlock == false)
             //om knappen jump vilket är space och jumoBlock variabeln från EnemyHorizontalMovement är lika med false kollar den följande if sats
-            if (groundCheck.isGrounded == true || groundCheck.jumpValue <= 1)
+            if (groundCheck.isGrounded > 0 || groundCheck.jumpValue <= 1)
             {   //om isGrounded från groundcheck scriptet är true eller om jumpValue från Groundcheck är lika med eller mindre än 1 gäller följande
                 {   //rbodyns hastighet ändras till en ny Vector2 med samma x axel men den får en kraft i Y axeln beroende på din bestämda jumpSpeed
                     rbody.velocity = new Vector2(

@@ -17,6 +17,7 @@ public class Sword : MonoBehaviour
         rbody = GameObject.FindWithTag("Player").GetComponent<Rigidbody2D>();
     }
 
+    
     private void FixedUpdate()
     {   //om svärdets rotationsvärde är mindre än -0,8 och att player kollar åt höger eller att V inte är nedtryckt händer följande
         if (transform.rotation.z <= -0.8 && lookingRight == true || (Input.GetKeyUp(KeyCode.V)))

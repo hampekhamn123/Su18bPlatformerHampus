@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class PlatformHorizontalMovement : MonoBehaviour
 {
+    //tog bort detta script eftersom att jag ändrade mig om sista nivån och inte hade med objektet i nivån, men använder en variabel i scriptet som jag inte visste vart det skulle ligga så de får ligga kvar
     public int platformSpeed = 3;
 
     public bool right = true;
 
     private Rigidbody2D rbody;
-
+    //gör att variabeln KeyCollected kan kommas åt från flera scripts det är det ända relevanta efterom att inget utav resterande funktioner används men de fungerar på samma sätt som i objectVerticalMovement
     public static bool keyCollected = false;
 
     void Start()

@@ -8,6 +8,8 @@ public class Sword : MonoBehaviour
 
     private bool lookingRight = true;
 
+    public BossFrog bossFrog;
+
     public int swingSpeed = 500;
 
     private void Start()

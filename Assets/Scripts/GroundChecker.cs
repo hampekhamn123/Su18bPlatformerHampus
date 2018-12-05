@@ -10,14 +10,14 @@ public class GroundChecker : MonoBehaviour
 
     //händer när objektet som scriptet ligger på kolliderar med en annan trigger
     private void OnTriggerEnter2D(Collider2D collision)
-    {   //om hitboxen som scriptet ligger på är när något ska isGrounded bli true och jumpValue ska bli 0
+    {   //om hitboxen som scriptet ligger på är när något ska isGrounded adderas med 1 och jumpValue ska bli 0
         isGrounded++;
         jumpValue = 0;
     }
 
     //händer när objektet som scriptet ligger på kolliderar med en annan trigger
     private void OnTriggerExit2D(Collider2D collision)
-    {   //om hitboxen som scriptet ligger på inte är när något ska isGrounded bli false
+    {   //om hitboxen som scriptet ligger på inte är när något ska isGrounded subtraheras med 1
         isGrounded--;
     }
 }

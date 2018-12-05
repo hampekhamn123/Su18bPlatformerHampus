@@ -17,17 +17,19 @@ public class ObjectVerticalMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        //om down är true skall velocityn på transform.up som vi gör om till en vector 2 multipliceras med speed denns local scale skall också hållas till 1, 1, 1 eftersom att den annars ville flipa vi ändrad kurs
         if (down == true)
         {
             rbody.velocity = -(Vector2)transform.up * speed;
             transform.localScale = new Vector3(1, 1, 1);
         }
+        //om down inte är true utan något annat (false) händer samma sak skall den färdas uppåt fast positivt istället för negativt som ovan
         else
         {
             rbody.velocity = (Vector2)transform.up * speed;
             transform.localScale = new Vector3(1, 1, 1);
         }
-
+        //om C är nedtryckt skall transform.up som är omgjort till en vector2 multipliceras med 0 och alltså stå still
         if (Input.GetKey(KeyCode.C))
             rbody.velocity = (Vector2)transform.up * 0;
 

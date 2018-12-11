@@ -23958,7 +23958,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07c37dfd1d8181348a114cf276aaa929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minimumScoreNeeded: 5
+  minimumScoreNeeded: 4
   sceneToLoad: Level2
 --- !u!4 &1875169526 stripped
 Transform:

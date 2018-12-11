@@ -5,17 +5,18 @@ using TMPro;
 
 public class BossHealthScript : MonoBehaviour
 {
-    //    private TextMeshProUGUI text;
+    private TextMeshPro text;
 
-    //    private BossFrog bossFrog;
+    public BossFrog bossFrog;
 
-    //    void Start()
-    //    {
-    //        text = GetComponent<TextMeshProUGUI>();
-    //    }
+    void Start()
+    {
+        text = GetComponent<TextMeshPro>();
+    }
 
-    //    void Update()
-    //    {
-    //        //text.text = string.Format("Health: {0:00}", bossFrog.frogHP);
-    //    }
+    void Update()
+    {
+        text.text = string.Format("Health: {0:00}", bossFrog.frogHP);
+
+    }
 }
